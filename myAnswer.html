@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Assignment 2</title>
+  </head>
+  <body>
+  <input id="inp" type ="text" name="in">
+  <input onclick="check()" type ="button" name="butin" value ="Double">
+  <br>
+  <br>
+  <label>Number 1:</label><input id="num1" type ="text" name="in"><br>
+  <label>Number 2:</label><input id="num2" type ="text" name="in"><br>
+  <label>Number 3:</label><input id="num3" type ="text" name="in"><br>
+  <label>Number 4:</label><input id="num4" type ="text" name="in"><br>
+  <label>Number 5:</label><input id="num5" type ="text" name="in"><br>
+  <label>Number 6:</label><input id="num6" type ="text" name="in"><br>
+  <label>Number 7:</label><input id="num7" type ="text" name="in"><br>
+  <label>Number 8:</label><input id="num8" type ="text" name="in"><br>
+  <label>Divide By:</label><input id="div" type ="text" name="in">
+  <input onclick="do_stuff()" type ="button" name="butin" value ="Check"><br>
+  <script>
+	function check(){
+		var val = document.getElementById("inp");
+		
+		if(inp.value == ''){
+			alert("input could not be blank.");
+		}else if(isNaN(inp.value)){
+			alert("input should be a number.");
+		}else{
+			var num = inp.value;
+			num = num * 2;
+			inp.value = num;
+		}
+	}
+	
+	function do_stuff(){
+		var val1 = document.getElementById("num1");
+		var val2 = document.getElementById("num2");
+		var val3 = document.getElementById("num3");
+		var val4 = document.getElementById("num4");
+		var val5 = document.getElementById("num5");
+		var val6 = document.getElementById("num6");
+		var val7 = document.getElementById("num7");
+		var val8 = document.getElementById("num8");
+		var div_v = document.getElementById("div");
+		
+		var algu = true;
+		
+		if(val1.value == ''){
+			alert("input could not be blank.");
+			algu = false;
+		}else if(isNaN(val1.value)){
+			alert("input should be a number.");
+			algu = false;
+		}
+		
+		if(val2.value == ''){
+			alert("input could not be blank.");
+			algu = false;
+		}else if(isNaN(val2.value)){
+			alert("input should be a number.");
+			algu = false;
+		}
+		
+		if(val3.value == ''){
+			alert("input could not be blank.");
+			algu = false;
+		}else if(isNaN(val3.value)){
+			alert("input should be a number.");
+			algu = false;
+		}
+		if(val4.value == ''){
+			alert("input could not be blank.");
+			algu = false;
+		}else if(isNaN(val4.value)){
+			alert("input should be a number.");
+			algu = false;
+		}
+		
+		if(val5.value == ''){
+			alert("input could not be blank.");
+			algu = false;
+		}else if(isNaN(val1.value)){
+			alert("input should be a number.");
+			algu = false;
+		}
+		
+		if(val6.value == ''){
+			alert("input could not be blank.");
+			algu = false;
+		}else if(isNaN(val2.value)){
+			alert("input should be a number.");
+			algu = false;
+		}
+		
+		if(val7.value == ''){
+			alert("input could not be blank.");
+			algu = false;
+		}else if(isNaN(val3.value)){
+			alert("input should be a number.");
+			algu = false;
+		}
+		if(val8.value == ''){
+			alert("input could not be blank.");
+			algu = false;
+		}else if(isNaN(val4.value)){
+			alert("input should be a number.");
+			algu = false;
+		}
+	}
+  </script>
+  </body>
+</html>
